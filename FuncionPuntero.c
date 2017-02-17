@@ -16,8 +16,8 @@ int main(){
     miPunteroFuncion = &addInt; //"Puntero!, vigila a addInt()""
 
     // Ahora usamos la funcion pueee /o.o/
-    int resultado = (*miPunteroFuncion)(3,5); // resultado = 8
-    printf(" resultado = %d \n",resultado);
+    int resultado = (*miPunteroFuncion)(3,5); 
+    printf(" resultado = %d \n",resultado); // resultado = 8
 }
 
 
