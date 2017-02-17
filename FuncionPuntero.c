@@ -1,7 +1,7 @@
 
 #include <stdio.h>
 
-// Podemos definir un puntero a una funcion, el cual recive dos ints y devuelte un int  c:
+// Podemos definir un puntero a una funcion, el cual recive dos ints y devuelte un int  O_O
 // si, definimos un puntero...
 int (*miPunteroFuncion)(int,int);
 
