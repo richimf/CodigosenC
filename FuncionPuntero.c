@@ -19,3 +19,6 @@ int main(){
     int resultado = (*miPunteroFuncion)(3,5); // resultado = 8
     printf(" resultado = %d \n",resultado);
 }
+
+
+
