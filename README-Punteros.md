@@ -10,7 +10,7 @@ Entonces, si una variable **A** contiene la dirección de otra variable **B**, d
 
 > tipo_de_dato *variable;
 
-ejemplo:
+Ejemplo:
 ```C
 int *puntero;
 ```
@@ -28,7 +28,7 @@ Los punteros utilizan dos operadores, estos son **&** y * .
 * El operador **&** devuelve la dirección de memoria.
 * El operador  *  devuelve el valor de alguna variable que ya contiene una dirección de memoria.
 
-ejemplo:
+Ejemplo:
 ```C
 int variable = 15;
 int *direccion = &variable; //un puntero guarda una direccion de memoria, con '&' extraemos la direccion de 'variable'
@@ -46,7 +46,7 @@ variable = 15
 valor = 15
  ```
 
-Veamos otro ejemplo.
+Veamos otro ejemplo:
 En este código dos Punteros harán referencia al mismo objeto.
 ```C
 int variable = 15;
