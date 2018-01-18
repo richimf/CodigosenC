@@ -237,6 +237,27 @@ printf("b = %d \n",b); //ahora b = 12
 Resultado: "b" valia 5 y ahora ya vale 12.
 
 
+### PUNTEROS A FUNCIONES ###
+Una función tiene una ubicación en memoria y si, esta ubicación puede asignarse a un puntero.
+Esta dirección será el punto de entrada de la función, es decir, usaremos este puntero para invocar a la función.
+Además, los "punteros a funciones" se pueden pasar como argumentos a otras funciones.
+> Recordar: funcion(argumentos)
+
+Los "punteros a funciones" se declaran de la siguiente forma, ejemplo:
+```C
+//El compilador indica que "p" es un puntero que devuelve un resultado entero "int".
+//Además especifica que tiene dos parámetros
+int (*p)(int *, int *)
+```
+Una función con tres parametros, uno de ellos es de la forma "puntero a funcion".
+```C
+// "a" es un parámetro de tipo int.
+// "*b" es un parámetro de tipo apuntador y es float.
+// int (*p)(int *, int *) es un parámetro de tipo "puntero a funcion"
+void funcion(int a, float *b, int (*p)(int *, int *) )
+```
+
+
 
 
 
