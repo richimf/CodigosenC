@@ -48,6 +48,7 @@ La salida del programa seria:
 variable = 15
 *direccion = 0x7fff5fbff6cc
 valor = 15
+valor de direccion = 15
  ```
 
 Veamos otro ejemplo:
