@@ -17,7 +17,7 @@ int *puntero;
 
 * Importante:
 
-	- **Int** define el tipo de variable a la que el puntero puede apuntar, en este caso solo podremos apuntar a variables de tipo **Int**. El compilador asume que cualquier direccion que contenga apunta a un entero **Int**.
+	- **Int** define el tipo de variable a la que el puntero puede apuntar, en este caso solo podremos apuntar a variables de tipo **Int**. El compilador asume que cualquier dirección que contenga apunta a un entero **Int**.
 
 	- Aunque técnicamente no es obligatorio, en realidad **podriamos apuntar** a un tipo **Float** o **Char** (o cualquier otro), pero esto puede ocasionar errores, entonces debe hacerse con cuidado.
 
@@ -133,7 +133,41 @@ p = 0x7fff5fbff68b
 p = x 
 ```
 
+### COMPARANDO PUNTEROS ###
+Suponiendo que tenemos dos punteros **p** y **q**, entonces podemos compararlos simplemente:
+```C
+if(p < q) {
+   // p apunta a menor memoria que q
+}
+```
 
+### APUNTADOR DE APUNTADORES ###
+Un "apuntador de apuntadores", algo escrito como:
+```C
+int **p; //con dos asteriscos o mas
+```
+Es simplemente una cadena de apuntadores, recordemos que un puntero contiene la direccion de una variable, entonces, cuando definimos un "apuntador de apuntadores", el primer apuntador contiene la dirección del segundo apuntador, el cuál apunta a la dirección de la variable.
 
+Ejemplo:
+```C
+int  var = 3000;
+int  *p;   //un apuntador simple
+int  **pp; //un apuntador que apunta a un apuntador, se llama "pp"
 
+// asignamos la dirección de "var" a "p"
+p = &var;
+
+// asignamos la dirección de "p" usando &, ahora "pp" hace referencia a "p"
+pp = &p;
+
+printf("Valor de var = %d \n", var );
+printf("Valor de *p = %d \n", *p );
+printf("Valor del apuntador de apuntadores **pp = %d \n", **pp);
+```
+La salida es:
+```
+Valor de var = 3000 
+Valor de *p = 3000 
+Valor del apuntador de apuntadores **pp = 3000 
+```
 
