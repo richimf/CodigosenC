@@ -1,7 +1,8 @@
 # PUNTEROS #
 
 ### QUE ES ###
-Un puntero es una variable que contiene una dirección de memoria. Así como una variable puede contener un numero *int b = 5*, esta variable contiene una dirección de memoria (son unos numeritos tipo 103043 y siempre cambian).
+Un puntero es una variable que contiene una dirección de memoria.
+Así como una variable puede contener un número **b = 5**, esta variable contiene una dirección de memoria (son unos numeritos tipo 103043 y siempre cambian).
 
 <br></br>
 Ahora, esta dirección de memoria es la ubicación de un objeto (o variable) en la memoria, digamos que en ese lugar vive la variable.
@@ -11,14 +12,14 @@ Entonces, si una variable **A** contiene la dirección de otra variable **B**, d
 
 ejemplo:
 ```C
-	int *puntero;
+int *puntero;
 ```
 
-*Importante:
+* Importante:
 
-	- *Int* define el tipo de variable a la que el puntero puede apuntar, en este caso solo podremos apuntar a variables de tipo *Int*. El compilador asume que cualquier direccion que contenga apunta a un entero *Int*.
+	- **Int** define el tipo de variable a la que el puntero puede apuntar, en este caso solo podremos apuntar a variables de tipo **Int**. El compilador asume que cualquier direccion que contenga apunta a un entero **Int**.
 
-	- Aunque tecnicamente no es obligatorio, en realidad podriamos apuntar a un tipo *Float* o *Char* (o cualquier otro), pero esto puede ocasionar errores, entonces debe hacerse con cuidado. Dicho esto, 
+	- Aunque tecnicamente no es obligatorio, en realidad podriamos apuntar a un tipo **Float** o **Char** (o cualquier otro), pero esto puede ocasionar errores, entonces debe hacerse con cuidado.
 
 
 ### USOS ###
