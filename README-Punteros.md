@@ -189,6 +189,55 @@ Valor de *p = 40
 Valor del apuntador de apuntadores **q = 40 
 ```
 
+### FUNCIONES ###
+Hay dos maneras de pasar variables, una es paso por valor y otra es paso por referencia(apuntadores).
+En las funciones en C, el paso de valores es por valor, es decir, cuando se pasa un elemento a una función, este elemento copia su valor, a grandes rasgos seria algo así:
+* Ejemplo de Paso por Valor:
+```C
+int var = 10;
+funcion(var); //paso por valor
+```
+
+* Ejemplo de Paso por Referencia:
+```C
+int var = 10;
+funcion(&var); //paso por referencia, usa &
+```
+
+Ejemplos:
+
+* El siguiente código es por "Paso por Valor", es decir, el valor de "b" NO se alterará.
+```C
+//Declaramos una funcion (arriba de main() ).
+void func(int f) {
+    f = 12;
+}
+
+//Dentro de main()...
+//Declaramos una variable y pasamos a "b" como parametro de la funcin
+int b = 5;
+func(b);
+```
+Resultado: "b" seguira valiendo 5.
+
+* El siguiente código es por "Paso por Referencia", es decir, los parámetros actualizarán sus valores. El valor de "b" SI se alterará.
+```C
+//Declaramos una función, el parámetro sera un puntero
+void func(int *p) {
+    *p = 12;
+}
+
+//Dentro de main()...
+int b = 5;
+printf("b = %d \n",b); // b = 5
+
+func(&b);  //pasamos la dirección de memoria de b, paso por referencia
+printf("b = %d \n",b); //ahora b = 12
+```
+Resultado: "b" valia 5 y ahora ya vale 12.
+
+
+
 
 
 
