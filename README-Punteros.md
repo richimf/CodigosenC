@@ -144,7 +144,7 @@ if(p < q) {
 ### APUNTADOR DE APUNTADORES ###
 Un "apuntador de apuntadores", algo escrito como:
 ```C
-int **p; //con dos asteriscos o mas
+int **q; //con dos asteriscos o mas
 ```
 Es simplemente una cadena de apuntadores, recordemos que un puntero contiene la direccion de una variable, entonces, cuando definimos un "apuntador de apuntadores", el primer apuntador contiene la dirección del segundo apuntador, el cuál apunta a la dirección de la variable.
 
@@ -152,17 +152,17 @@ Ejemplo:
 ```C
 int  var = 3000;
 int  *p;   //un apuntador simple
-int  **pp; //un apuntador que apunta a un apuntador, se llama "pp"
+int  **q; //un apuntador que apunta a un apuntador, se llama "q"
 
 // asignamos la dirección de "var" a "p"
 p = &var;
 
-// asignamos la dirección de "p" usando &, ahora "pp" hace referencia a "p"
-pp = &p;
+// asignamos la dirección de "p" usando &, ahora "q" hace referencia a "p"
+q = &p;
 
 printf("Valor de var = %d \n", var );
 printf("Valor de *p = %d \n", *p );
-printf("Valor del apuntador de apuntadores **pp = %d \n", **pp);
+printf("Valor del apuntador de apuntadores **q = %d \n", **q);
 ```
 La salida es:
 ```
