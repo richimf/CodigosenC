@@ -192,13 +192,13 @@ Valor del apuntador de apuntadores **q = 40
 ### FUNCIONES ###
 Hay dos maneras de pasar variables, una es paso por valor y otra es paso por referencia(apuntadores).
 En las funciones en C, el paso de valores es por valor, es decir, cuando se pasa un elemento a una función, este elemento copia su valor, a grandes rasgos seria algo así:
-* Ejemplo de Paso por Valor:
+* Ejemplo de **Paso por Valor**:
 ```C
 int var = 10;
 funcion(var); //paso por valor
 ```
 
-* Ejemplo de Paso por Referencia:
+* Ejemplo de **Paso por Referencia**:
 ```C
 int var = 10;
 funcion(&var); //paso por referencia, usa &
@@ -206,7 +206,7 @@ funcion(&var); //paso por referencia, usa &
 
 Ejemplos:
 
-* El siguiente código es por "Paso por Valor", es decir, el valor de "b" NO se alterará.
+* El siguiente código es por **Paso por Valor**, es decir, el valor de "b" NO se alterará.
 ```C
 //Declaramos una funcion (arriba de main() ).
 void func(int f) {
@@ -220,7 +220,7 @@ func(b);
 ```
 Resultado: "b" seguirá valiendo 5.
 
-* El siguiente código es por "Paso por Referencia", es decir, los parámetros actualizarán sus valores. El valor de "b" SI se alterará.
+* El siguiente código es por **Paso por Referencia**, es decir, los parámetros actualizarán sus valores. El valor de "b" SI se alterará.
 ```C
 //Declaramos una función, el parámetro sera un puntero
 void func(int *p) {
@@ -256,7 +256,7 @@ Una función con tres parametros, uno de ellos es de la forma "puntero a funcion
 // int (*p)(int *, int *) es un parámetro de tipo "puntero a funcion"
 void funcion(int a, float *b, int (*p)(int *, int *) )
 ```
-Veamos un ejemplo mas general:
+Veamos un ejemplo más general:
 ```C
 #include <stdio.h>
 
@@ -283,8 +283,8 @@ int main(){
 
 ### REFERENCIAS ###
 
-Manual de referencia C, cuarta edición, Herbert Shildt, Mc.Graw-Hill.
-C. Algoritmos, programación y estructuras de datos, Schaum.
+- Manual de referencia C, cuarta edición, Herbert Shildt, Mc.Graw-Hill.
+- C. Algoritmos, programación y estructuras de datos, Schaum.
 
 https://www.geeksforgeeks.org/void-pointer-c/
 https://www.tutorialspoint.com/cprogramming/c_pointer_to_pointer.htm
