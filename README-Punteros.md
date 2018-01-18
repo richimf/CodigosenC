@@ -218,7 +218,7 @@ void func(int f) {
 int b = 5;
 func(b);
 ```
-Resultado: "b" seguira valiendo 5.
+Resultado: "b" seguirá valiendo 5.
 
 * El siguiente código es por "Paso por Referencia", es decir, los parámetros actualizarán sus valores. El valor de "b" SI se alterará.
 ```C
