@@ -67,6 +67,25 @@ La salida del programa es:
 puntero1 = 15, puntero2 = 15 
 puntero1 = 0x7fff5fbff6cc, puntero2 = 0x7fff5fbff6cc 
 ```
-### USOS ###
 
-Los punteros son utilizados en estructuras de datos dinamicas tales como en Aboles binarios (Binary Tree) o listas enlazadas (Linkedlist).
+### CONVERSIONES DE PUNTEROS ###
+
+Los punteros pueden convertirse en otro tipo de puntero. Pero, como dijimos, se debe tener cuidado con el tipo de dato usado en el puntero. En este código se intentará pasar un **double** a **int**. 
+```C
+double x = 100.1, y;
+int *p;
+    
+p = (int *)&x;
+y = *p;
+    
+printf("x = %f \n",x);  //x = 100.100000
+printf("p = %f \n",*p); //p = 100.100000
+printf("p = %d \n",*p); //p = 1717986918
+printf("y = %f \n",y);  //y = 1717986918.000000
+```
+La conversión fracasa, ya que **double** utiliza 8 bytes y **int** usa 4, hay una perdida de información.
+Entonces vemos que las operaciones de punteros se realizan de acuerdo con sus tipos base en este caso **int**, todas las operaciones deberian ser con **int**.
+
+
+### ARITMETICA DE PUNTEROS ###
+
