@@ -172,6 +172,23 @@ La salida es:
 ```
 Valor de var = 3000 
 Valor de *p = 3000 
-Valor del apuntador de apuntadores **pp = 3000 
+Valor del apuntador de apuntadores **q = 3000 
 ```
+
+Ahora, intentemos actualizar el valor de **var**. Usaremos el mismo código, pero esta vez escribiremos al final:
+```C
+ **q = 40; //nuevo valor
+ printf("Valor de var = %d \n", var);
+ printf("Valor de *p = %d \n", *p );
+ printf("Valor del apuntador de apuntadores **q = %d \n", **q);
+ ```
+La salida es:
+```
+Valor de var = 40 
+Valor de *p = 40 
+Valor del apuntador de apuntadores **q = 40 
+```
+
+
+
 
