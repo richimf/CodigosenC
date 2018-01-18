@@ -4,7 +4,6 @@
 Un puntero es una variable que contiene una dirección de memoria.
 Así como una variable puede contener un número **b = 5**, esta variable contiene una dirección de memoria (son unos numeritos tipo 103043 y siempre cambian).
 
-<br></br>
 Ahora, esta dirección de memoria es la ubicación de un objeto (o variable) en la memoria, digamos que en ese lugar vive la variable.
 Entonces, si una variable **A** contiene la dirección de otra variable **B**, decimos que **A** apunta **B**. Esta variable **A** sera el puntero y para declarar un puntero lo hacemos así:
 
