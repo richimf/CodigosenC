@@ -98,8 +98,12 @@ Un puntero puede "apuntar" o hacer referencia a ningún lado:
 ```C
 int *puntero = NULL
 ```
+O bien, asignandole un cero:
+```C
+int *puntero = 0
+```
 
-Y también, un puntero puede hacer referencia a cualquier tipo de dato (int, float, double, etc...) gracias a **void**, ejemplo:
+También, un puntero puede hacer referencia a cualquier tipo de dato (int, float, double, etc...) gracias a **void**, ejemplo:
 ```C
 int a = 10;
 char b = 'x';
