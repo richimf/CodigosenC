@@ -92,5 +92,48 @@ La conversión fracasa, ya que **double** utiliza 8 bytes y **int** usa 4, hay u
 Entonces vemos que las operaciones de punteros se realizan de acuerdo con sus tipos base en este caso **int**, todas las operaciones deberian ser con **int**.
 
 
-### ARITMETICA DE PUNTEROS ###
+### PUNTEROS NULL y VOID ###
+
+Un puntero puede "apuntar" o hacer referencia a ningún lado:
+```C
+int *puntero = NULL
+```
+
+Y también, un puntero puede hacer referencia a cualquier tipo de dato (int, float, double, etc...) gracias a **void**, ejemplo:
+```C
+int a = 10;
+char b = 'x';
+
+void *p = &a;  // void pointer tiene la dirección de 'a', nota que 'a' es un int
+p = &b;        // void pointer tiene la dirección de 'b', nota que 'b' es un char
+```
+
+Veamos este mismo código en acción:
+```C
+ int a = 10;
+ char b = 'x';
+ 
+ // void pointer tiene la dirección de 'a', nota que 'a' es un int
+ void *p = &a; 
+    
+ printf("p = %p \n",p);    	//Imprimirá su direccin de memoria 
+ printf("p = %d \n",*(int *)p); //Usamos *(int *) para convertir a tipo int
+ 
+ // void pointer tiene la dirección de 'b', nota que 'b' es un char
+ p = &b; 
+ 
+ printf("p = %p \n",p);		  //Imprimirá su direccin de memoria 
+ printf("p = %c \n",*(char *)p);  //Usamos *(char *) para convertir a tipo char
+```
+La salida del programa es:
+```
+p = 0x7fff5fbff68c 
+p = 10 
+p = 0x7fff5fbff68b 
+p = x 
+```
+
+
+
+
 
