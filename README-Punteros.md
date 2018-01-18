@@ -256,9 +256,38 @@ Una función con tres parametros, uno de ellos es de la forma "puntero a funcion
 // int (*p)(int *, int *) es un parámetro de tipo "puntero a funcion"
 void funcion(int a, float *b, int (*p)(int *, int *) )
 ```
+Veamos un ejemplo mas general:
+```C
+#include <stdio.h>
+
+// Podemos definir un puntero a una funcion, el cual recive dos ints y devuelte un int  O_O
+// si, definimos un puntero...
+int (*miPunteroFuncion)(int,int);
+
+// Y luego, una funcion cualquiera /o.o/
+int addInt(int n, int m){
+    return n+m;
+}
+
+int main(){
+    // Apuntamos a nuestra funcion   O.O! ...
+    // A nuestro puntero "miPunteroFuncion" le asignamos la referencia a nuestra funcion:
+    miPunteroFuncion = &addInt; //"Puntero!, vigila a addInt()""
+
+    // Ahora usamos la funcion:
+    int resultado = (*miPunteroFuncion)(3,5); 
+    printf(" resultado = %d \n",resultado); // resultado = 8
+}
+```
 
 
+### REFERENCIAS ###
 
+Manual de referencia C, cuarta edición, Herbert Shildt, Mc.Graw-Hill.
+C. Algoritmos, programación y estructuras de datos, Schaum.
 
-
+https://www.geeksforgeeks.org/void-pointer-c/
+https://www.tutorialspoint.com/cprogramming/c_pointer_to_pointer.htm
+https://stackoverflow.com/questions/18698317/pointers-as-function-arguments-in-c
+https://stackoverflow.com/questions/840501/how-do-function-pointers-in-c-work
 
