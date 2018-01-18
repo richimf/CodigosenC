@@ -25,14 +25,18 @@ int *puntero;
 ### OPERADORES ###
 
 Los punteros utilizan dos operadores, estos son **&** y * .
-* El operador **&** devuelve la dirección de memoria.
-* El operador  *  devuelve el valor de alguna variable que ya contiene una dirección de memoria.
+* El operador **&** obtiene la dirección de memoria de una variable.
+* El operador * hace dos cosas:
 
+	- Define a una variable como puntero, ej: int *puntero; 
+	
+	- Lee el valor de un puntero (es decir, no la dirección, sino el valor).
+	
 Ejemplo:
 ```C
 int variable = 15;
 int *direccion = &variable; //un puntero guarda una direccion de memoria, con '&' extraemos la direccion de 'variable'
-int valor = *direccion;     //el * sirve para leer el valor de 'direccion', este será 10
+int valor = *direccion;     //el * sirve para leer el valor de 'direccion', este será 15
    
 printf("\n variable = %d",variable);
 printf("\n *direccion = %p",direccion);
