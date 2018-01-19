@@ -281,7 +281,7 @@ int main(){
 ```
 
 ### COMPARTE ###
-PUNTEROS en C (tutorial): https://cnhv.co/1dk6g
+PUNTEROS en C (tutorial): https://cnhv.co/1dk77
 
 ### REFERENCIAS ###
 
