@@ -1,6 +1,6 @@
-# PUNTEROS #
+# PUNTEROS en C #
 
-### QUE ES ###
+### ¿QUE SON? ###
 * Un puntero es una variable que contiene una dirección de memoria.
 
 * Así como una variable puede contener un número **b = 5**, esta variable contiene una dirección de memoria (son unos numeritos tipo 0x7fab5fbff4ad y siempre cambian).
@@ -280,6 +280,8 @@ int main(){
 }
 ```
 
+### COMPARTE ###
+PUNTEROS en C (tutorial): https://cnhv.co/1dk6g
 
 ### REFERENCIAS ###
 
